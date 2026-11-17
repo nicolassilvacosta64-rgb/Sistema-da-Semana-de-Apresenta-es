@@ -5,141 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologias do Espaço</title>
     <style>
-        /* Fonte que baixei do Google Fonts */
+        /* Fonte do Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             background-color: #080d27;
-            color: aliceblue;
+            color: #e8eefc;
             font-family: "National Park", sans-serif;
             font-weight: 400;
-            margin: 0;
-            padding: 15px;
+            padding: 12px;
             line-height: 1.5;
         }
 
-        /* Container principal da página */
+        /* Caixa principal */
         #principal {
             border: 2px solid #493B91;
             margin: 0 auto;
             width: 95%;
             max-width: 1100px;
-            padding: 15px;
+            padding: 16px;
             text-align: center;
-            box-shadow: 0px 4px 15px rgba(80, 120, 255, 0.3);
-            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(80, 120, 255, 0.28);
+            border-radius: 14px;
+            background: #0a1235;
         }
 
-        /* Grid das 8 tecnologias - no computador fica 4 colunas */
+        /* Grid das tecnologias - 4 colunas no computador */
         #container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 12px;
-            margin-top: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-top: 8px;
         }
 
         #terra1 {
             border: 2px solid #493B91;
             border-radius: 12px;
             width: 85%;
-            max-width: 500px;
-            margin: 15px auto;
+            max-width: 480px;
+            margin: 12px auto;
             display: block;
         }
 
-        /* Estilo dos cards (deixei com um degradê pra ficar mais bonito) */
+        /* Cards das tecnologias */
         .conteiner,
         .conteiner-box {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            background: linear-gradient(180deg, #1a2a6c 0%, #111C46 100%);
-            border: 2px solid #1e2f6b;
-            margin: 10px auto;
+            gap: 8px;
+            background: linear-gradient(160deg, #1c2e7a 0%, #0f1a4a 100%);
+            border: 1.5px solid #2a3d8a;
             width: 100%;
-            padding: 18px 12px;
+            padding: 16px 10px;
             text-align: center;
-            box-shadow: 0px 4px 15px rgba(80, 120, 255, 0.25);
+            box-shadow: 0 3px 12px rgba(60, 100, 220, 0.22);
             border-radius: 12px;
         }
 
         h1 {
-            font-size: 1.8rem;
-            margin: 10px 0;
+            font-size: 1.75rem;
+            margin: 8px 0;
         }
 
         h2 {
-            font-size: 1.4rem;
-            margin: 15px 0 10px 0;
+            font-size: 1.35rem;
+            margin: 14px 0 8px;
         }
 
         h3 {
-            font-size: 1.15rem;
-            margin: 6px 0;
+            font-size: 1.05rem;
+            margin: 4px 0;
             font-weight: 600;
+            color: #ffffff;
         }
 
         p {
-            font-size: 0.95rem;
-            margin: 6px 0;
-            line-height: 1.45;
+            font-size: 0.9rem;
+            margin: 4px 0;
+            line-height: 1.4;
+            color: #d0d8f0;
         }
 
-        /* Ajuste para tablet */
+        /* Tablet: 2 colunas */
         @media (max-width: 900px) {
             #container {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
             }
         }
 
-        /* Ajuste para celular - aqui deixa 1 card por linha pra não ficar apertado */
+        /* Celular: continua 2 colunas pra ficar parecido com o computador */
         @media (max-width: 600px) {
             body {
-                padding: 8px;
+                padding: 6px;
             }
 
             #principal {
                 width: 100%;
                 padding: 10px;
-                border-radius: 8px;
+                border-radius: 10px;
             }
 
             #terra1 {
-                width: 95%;
+                width: 92%;
                 max-width: 100%;
             }
 
             .conteiner,
             .conteiner-box {
-                width: 100%;
-                padding: 16px 10px;
-                margin: 8px auto;
+                padding: 14px 8px;
             }
 
             #container {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
             }
 
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            h2 {
-                font-size: 1.25rem;
-            }
-
-            h3 {
-                font-size: 1.1rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-            }
+            h1 { font-size: 1.45rem; }
+            h2 { font-size: 1.2rem; }
+            h3 { font-size: 0.98rem; }
+            p  { font-size: 0.82rem; }
         }
     </style>
 </head>
@@ -166,68 +157,45 @@
     <h2>8 Principais Tecnologias Espaciais</h2>
 
     <div id="container">
+        <!-- 8 cards -->
         <div class="conteiner">
             <h3>🚀 Foguetes espaciais</h3>
-            <p>
-                Transportam astronautas, satélites e
-                equipamentos para o espaço.
-            </p>
+            <p>Transportam astronautas, satélites e equipamentos para o espaço.</p>
         </div>
 
         <div class="conteiner">
             <h3>🛸 Naves espaciais</h3>
-            <p>
-                Transportam astronautas durante
-                viagens espaciais.
-            </p>
+            <p>Transportam astronautas durante viagens espaciais.</p>
         </div>
 
         <div class="conteiner">
             <h3>🛰️ Satélites artificiais</h3>
-            <p>
-                Permitem comunicação, navegação e
-                observação da Terra.
-            </p>
+            <p>Permitem comunicação, navegação e observação da Terra.</p>
         </div>
 
         <div class="conteiner">
             <h3>🌎 Estações espaciais</h3>
-            <p>
-                Funcionam como laboratórios para
-                pesquisas científicas no espaço.
-            </p>
+            <p>Funcionam como laboratórios para pesquisas científicas no espaço.</p>
         </div>
 
         <div class="conteiner">
             <h3>👨‍🚀 Trajes espaciais</h3>
-            <p>
-                Protegem os astronautas e permitem
-                atividades fora das naves.
-            </p>
+            <p>Protegem os astronautas e permitem atividades fora das naves.</p>
         </div>
 
         <div class="conteiner">
             <h3>🌌 Sondas espaciais</h3>
-            <p>
-                Exploram planetas e outros corpos
-                celestes sem transportar pessoas.
-            </p>
+            <p>Exploram planetas e outros corpos celestes sem transportar pessoas.</p>
         </div>
 
         <div class="conteiner">
             <h3>🤖 Rovers espaciais</h3>
-            <p>
-                São robôs utilizados para explorar
-                superfícies de planetas, como Marte.
-            </p>
+            <p>São robôs utilizados para explorar superfícies de planetas, como Marte.</p>
         </div>
 
         <div class="conteiner">
             <h3>🔭 Telescópios espaciais</h3>
-            <p>
-                Observam estrelas, planetas e
-                galáxias distantes.
-            </p>
+            <p>Observam estrelas, planetas e galáxias distantes.</p>
         </div>
     </div>
 </div>
